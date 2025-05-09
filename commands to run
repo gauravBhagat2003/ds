@@ -1,0 +1,38 @@
+//assignment no-1;
+
+Step 7: Compile and execute application programs
+#javac SearchQuery.java
+#rmic SearchQuery
+#rmiregistry on console
+On console-1:
+Compile Server Application:
+#javac Server.java
+#java Server
+On console-2:
+Compile Client Application:
+#javac Client.java
+#java Client
+
+//assignment no-2;
+
+At 1st Console
+1) idlj -fall Calc.idl
+2) javac  *.java CalcApp/.java
+3) orbd -ORBInitialPort 1050&
+At 2nd Console
+1) javac CalcServer.java
+2) java CalcServer -ORBInitialPort 1050&
+At 3rd Console
+1) javac CalcClient.java
+2) java CalcClient -ORBInitialPort 1050
+
+//Assignment no-3;
+
+mpic hello.c 
+mpirun -np 4 ./a.out 
+
+mpic hello2.c 
+mpirun -np 0 ./a.out 
+
+mpic hello3.c 
+mpirun -np 0 ./a.out 
